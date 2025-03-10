@@ -21,11 +21,14 @@ Ollama must be installed and running:
 
 1. git clone https://github.com/aimanrashidd/mistral-7.git
    cd mistral-7
-2. python -m venv mistral_env
-   source mistral_env/bin/activate  # macOS/Linux
+2. python -m venv mistral_env ||
+   source mistral_env/bin/activate  # macOS/Linux ||
    mistral_env\Scripts\activate     # Windows
+   
 3. pip install -r requirements.txt
+   
 4. uvicorn api:app --host 0.0.0.0 --port 8000
+
 5. streamlit run app.py
 
 
